@@ -17,7 +17,8 @@ var app = angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -33,3 +34,6 @@ var app = angular
         redirectTo: '/'
       });
   });
+
+  angular.module('portfoliohuntApp').constant('FIREBASE_URL', 'portfoliohunt.firebaseIO.com/');
+
