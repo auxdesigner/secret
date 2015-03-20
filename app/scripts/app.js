@@ -18,7 +18,8 @@ var app = angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'firebase'
+    'firebase', 
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -39,5 +40,7 @@ var app = angular
       });
   });
 
+
   angular.module('portfoliohuntApp').constant('FIREBASE_URL', 'portfoliohunt.firebaseIO.com/');
 
+ 

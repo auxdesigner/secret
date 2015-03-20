@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('NavCtrl', function ($scope, $location, Post) {
+app.controller('NaviCtrl', function ($scope, $location, Post) {
   $scope.post = {url: 'http://', title: ''};
 
   $scope.submitPost = function () {
@@ -11,3 +11,5 @@ app.controller('NavCtrl', function ($scope, $location, Post) {
   };
 
 });
+
+

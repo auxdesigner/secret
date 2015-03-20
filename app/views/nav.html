@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -7,19 +9,31 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">ng-news</a>
+    <a class="navbar-brand" id="site-name" href="#">Placeholder</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div ng-controller="NavCtrl" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div ng-controller="NaviCtrl" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <form class="navbar-form navbar-left" role="search" ng-submit="submitPost()">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Title" ng-model="post.title">
+        
+        <md-input-container md-no-float>
+         
+          <input type="text"  ng-model="post.title" placeholder="title">
+        </md-input-container>
       </div>
+
+
       <div class="form-group">
-      <input type="text" class="form-control" placeholder="Link" ng-model="post.url">
+      
+      <md-input-container md-no-float>
+          
+          <input type="text"  ng-model="post.url">
+        </md-input-container>
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      
+      <md-button type="submit" id="submit-btn" class="md-raised md-primary">Submit</md-button>
+      <!--<button type="submit" id="submit-btn" class="btn btn-default">Submit</button>-->
     </form>
   </div><!-- /.navbar-collapse -->
 </nav>
