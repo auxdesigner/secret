@@ -15,5 +15,6 @@ body{background:#F3F3F3;}
 .cmt{margin-top:10px;padding-top:10px;border-top:1px solid #ccc;}
 .cmt .author{font-size:11px;color:#bbb;}
 
-#site-name{line-height: 50px;}
+#site-name{line-height: 20px;}
 .form-group{margin-right: 20px;}
+md-input-container {padding: 2px 2px 4px;}
